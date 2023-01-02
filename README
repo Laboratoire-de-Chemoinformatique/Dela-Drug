@@ -1,0 +1,16 @@
+REQUIRED PYTHON PACKAGES:
+pytorch, rdkit
+
+once the required packages are installed in the current environment,to run the software, issue the command
+
+python3 generate.py SMILES identifier requiredMols positions
+
+from the folder where the software is located, where:
+- SMILES is the input SMILES devoid of stereochemical information
+- identifier is the unique name assigned to the run
+- requiredMols is the number of valid and unique molecules desired in output
+- positions is a comma separated list enclosed in squadre brackets of the position where a substitution is desired.
+
+the output will be written in the file outputs/identifier.csv and will contain the valid and unique SMILES of the output molecules. It is possible that the number of generated molecules.
+
+
